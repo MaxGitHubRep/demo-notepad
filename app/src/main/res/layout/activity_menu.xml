@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MenuActivity">
+
+    <Button
+            android:text="View Saved Homework"
+            android:layout_width="221dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/viewSavedHomework" android:layout_marginEnd="8dp" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
+            app:layout_constraintHorizontal_bias="0.503"
+            android:layout_marginBottom="8dp" app:layout_constraintBottom_toTopOf="@+id/editSavedHomework"/>
+    <Button
+            android:text="Edit Saved Homework"
+            android:layout_width="221dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/editSavedHomework" android:layout_marginEnd="8dp" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
+            app:layout_constraintHorizontal_bias="0.503" android:layout_marginBottom="28dp"
+            app:layout_constraintBottom_toTopOf="@+id/typeHomework"
+    />
+    <Button
+            android:text="Add Homework"
+            android:enabled="false"
+            android:layout_width="176dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/addHomework" android:layout_marginEnd="8dp" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
+            app:layout_constraintHorizontal_bias="0.502" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+    <TextView
+            android:text="Homework Options"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:id="@+id/title" android:textSize="30sp"
+            android:textColor="@color/colorPrimary" android:textAlignment="center" android:textAllCaps="false"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginStart="8dp"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.503"
+            android:layout_marginBottom="8dp" app:layout_constraintBottom_toTopOf="@+id/imageView4"/>
+    <EditText
+            android:layout_width="353dp"
+            android:layout_height="108dp"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:id="@+id/typeHomework" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/addHomework" android:autofillHints="Add homework link here"/>
+    <View
+            android:id="@+id/divider"
+            android:layout_width="325dp"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintBottom_toTopOf="@+id/typeHomework"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/viewSavedHomework"
+            app:layout_constraintVertical_bias="0.779" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp" app:layout_constraintHorizontal_bias="0.511"/>
+    <ImageView
+            android:layout_width="121dp"
+            android:layout_height="120dp" app:srcCompat="@mipmap/ic_launcher_round"
+            android:id="@+id/imageView4" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/viewSavedHomework"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp" android:layout_marginTop="8dp" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_bias="0.502" app:layout_constraintVertical_bias="0.847"/>
+</android.support.constraint.ConstraintLayout>
